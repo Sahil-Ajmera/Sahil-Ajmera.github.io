@@ -1,51 +1,53 @@
-<!DOCTYPE html>
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
-<html xmlns="http://www.w3.org/1999/xhtml">
-<head runat="server">
-  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
-    <meta name="viewport" content="width=device-width, initial-scale=1"/>
-    <title>Github Website</title>
-     <!-- CSS  -->
-  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
-    <!--<link rel="stylesheet" href="css/bootstrap.min.css" crossorigin="anonymous">
-    <link rel="stylesheet" href="css/bootstrap.css" crossorigin="anonymous">-->
-    <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+    <title>reveal.js</title>
 
-</head>
-<body>
-  <nav>
-    <div class="nav-wrapper">
-      <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
-      <ul style="list-style-type: none;" class="left hide-on-med-and-down">
-        <li><a href="index.html">HOME</a></li>
-        <li><a href="resume.html">RESUME</a></li>
-        <li><a href="impressions.html">IMPRESSIONS</a></li>
-        <li><a href="about.html">ABOUT</a></li>
-        <li><a href="contact.html">CONTACT</a></li>
-      </ul>
-    </div>
-  </nav>
+    <link rel="stylesheet" href="reveal.js/css/reveal.css">
+    <link rel="stylesheet" href="reveal.js/css/theme/black.css">
 
-  <ul style="list-style-type: none;" class="sidenav" id="mobile-demo">
-    <li><a href="index.html">HOME</a></li>
-    <li><a href="resume.html">RESUME</a></li>
-    <li><a href="impressions.html">IMPRESSIONS</a></li>
-    <li><a href="about.html">ABOUT</a></li>
-    <li><a href="contact.html">CONTACT</a></li>
-  </ul>
-  <br>
-<div class="section no-pad-bot" id="index-banner">
-    <div class="container">
-      <div class="row center">
-        <h5 class="header col s12 light">Page under construction</h5>
+    <!-- Theme used for syntax highlighting of code -->
+    <link rel="stylesheet" href="reveal.js/lib/css/zenburn.css">
+
+    <!-- Printing and PDF exports -->
+    <script>
+      var link = document.createElement( 'link' );
+      link.rel = 'stylesheet';
+      link.type = 'text/css';
+      link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+      document.getElementsByTagName( 'head' )[0].appendChild( link );
+    </script>
+  </head>
+  <body>
+    <div class="reveal">
+      <div class="slides">
+        <section  data-background="images/background_image.jpg">
+          <section data-background-size="contain" >
+            <img style="z-index: 11;" data-natural-width="2030" data-natural-height="1350" data-lazy-loaded="" src="images/background_image.jpg">
+          </section>
+        </section>
+        <section>Slide 2</section>
       </div>
     </div>
-  </div>
 
-    <!--  Scripts-->
-  <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
-  <script src="js/materialize.js"></script>
-  <script src="js/init.js"></script>
-</body>
+    <script src="reveal.js/lib/js/head.min.js"></script>
+    <script src="reveal.js/js/reveal.js"></script>
+
+    <script>
+      // More info about config & dependencies:
+      // - https://github.com/hakimel/reveal.js#configuration
+      // - https://github.com/hakimel/reveal.js#dependencies
+      Reveal.initialize({
+        dependencies: [
+          { src: 'plugin/markdown/marked.js' },
+          { src: 'plugin/markdown/markdown.js' },
+          { src: 'plugin/notes/notes.js', async: true },
+          { src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } }
+        ]
+      });
+    </script>
+  </body>
 </html>
