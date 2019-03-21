@@ -6,18 +6,18 @@
 
     <title>reveal.js</title>
 
-    <link rel="stylesheet" href="reveal.js/css/reveal.css">
-    <link rel="stylesheet" href="reveal.js/css/theme/black.css">
+    <link rel="stylesheet" href="reveal.js_files/css/reveal.css">
+    <link rel="stylesheet" href="reveal.js_files/css/theme/black.css">
 
     <!-- Theme used for syntax highlighting of code -->
-    <link rel="stylesheet" href="reveal.js/lib/css/zenburn.css">
+    <link rel="stylesheet" href="reveal.js_files/lib/css/zenburn.css">
 
     <!-- Printing and PDF exports -->
     <script>
       var link = document.createElement( 'link' );
       link.rel = 'stylesheet';
       link.type = 'text/css';
-      link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+      link.href = window.location.search.match( /print-pdf/gi ) ? 'reveal.js_files/css/print/pdf.css' : 'reveal.js_files/css/print/paper.css';
       document.getElementsByTagName( 'head' )[0].appendChild( link );
     </script>
   </head>
@@ -33,8 +33,8 @@
       </div>
     </div>
 
-    <script src="reveal.js/lib/js/head.min.js"></script>
-    <script src="reveal.js/js/reveal.js"></script>
+    <script src="reveal.js_files/lib/js/head.min.js"></script>
+    <script src="reveal.js_files/js/reveal.js"></script>
 
     <script>
       // More info about config & dependencies:
@@ -42,10 +42,10 @@
       // - https://github.com/hakimel/reveal.js#dependencies
       Reveal.initialize({
         dependencies: [
-          { src: 'plugin/markdown/marked.js' },
-          { src: 'plugin/markdown/markdown.js' },
-          { src: 'plugin/notes/notes.js', async: true },
-          { src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } }
+          { src: 'reveal.js_files/plugin/markdown/marked.js' },
+          { src: 'reveal.js_files/plugin/markdown/markdown.js' },
+          { src: 'reveal.js_files/plugin/notes/notes.js', async: true },
+          { src: 'reveal.js_files/plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } }
         ]
       });
     </script>
