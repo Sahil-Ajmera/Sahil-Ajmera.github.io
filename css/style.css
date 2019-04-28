@@ -55,3 +55,15 @@ p {
 footer.page-footer {
   margin: 0;
 }
+.mycsstext{
+font-family: -apple-system, 
+BlinkMacSystemFont, 
+"Segoe UI Light", 
+Roboto, 
+Oxygen-Sans,    
+Ubuntu, 
+Cantarell, 
+"Helvetica Neue", 
+sans-serif;
+font-size: 1.64rem;
+}
